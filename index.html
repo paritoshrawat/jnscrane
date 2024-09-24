@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js"></script>
+  </head>
+  <body>
+    <nav>
+      <div class="logo">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIAa6KOsNBGYF5NbHRRrVxq73N9F8Li1FkpQ&s"
+          alt="jns logo"
+        />
+      </div>
+      <ul class="nav-links">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <div class="menu-btn" onclick="toggleMenu()">&#9776;</div>
+    </nav>
+
+    <!-- image  -->
+    <section>
+      <div class="section">
+        <div class="section-text">
+          <h1>Drive Your Company With JN services Cranes</h1>
+          <p>
+            we have professionals engage in various challenging role in material
+            handling design manufacturing and installation
+          </p>
+        </div>
+      </div>
+    </section>
+    <!-- card  -->
+    <div class="card-text">
+      <h1>Services</h1>
+    </div>
+    <div class="card-container">
+      <div class="card">
+        <img
+          id="img1"
+          src="https://static.thenounproject.com/png/4959296-200.png"
+          alt="Card Image 1"
+        />
+        <div class="card-content">
+          <h2>INFRASTRUCTURE</h2>
+          <p>
+            Our setup is accounted with all required advanced machinery and
+            amenities
+          </p>
+          <button>Read More</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          id="img1"
+          src="data:image/png;base64,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"
+          alt="Card Image 2"
+        />
+        <div class="card-content">
+          <h2>CLIENTS SATISFACTION</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+            velit!
+          </p>
+          <button>Read More</button>
+        </div>
+      </div>
+
+      <div class="card">
+        <img
+          id="img1"
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTgN4WcZyFw1iidX1Ic3qoRBx2wOB7fEeBUrrTuVpS0gerRiyvc8tuCvBd55kVkV_IyhpU&usqp=CAU"
+          alt="Card Image 3"
+        />
+        <div class="card-content">
+          <h2>QUALITY ASSURANCE</h2>
+          <p>
+            We are commited to satisfy requirements of our clients with the best
+            in class range of plastic extruder machines and spare parts
+          </p>
+          <button>Read More</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- about  -->
+    <section class="about-section">
+      <div class="about-content">
+        <h2>About Us</h2>
+        <p>
+          We are dedicated to providing high-quality products and exceptional
+          customer service. Our mission is to deliver the best experience for
+          our customers and to ensure satisfaction with every purchase. With
+          years of experience in the industry, we aim to be a trusted name that
+          you can rely on.
+        </p>
+      </div>
+    </section>
+
+    <!-- footer  -->
+
+    <footer class="footer">
+      <div class="footer-col">
+        <h3>About Us</h3>
+        <p>
+          We are dedicated to providing high-quality products and exceptional
+          customer service. we aim to be a trusted name that you can rely on.
+        </p>
+      </div>
+      <div class="footer-col">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Services</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h3>Follow Us</h3>
+        <div class="footer-socials">
+          <a href="#"><i class="fab fa-facebook-f"> Facebook </i></a>
+          <a href="#"><i class="fab fa-twitter">Twitter</i></a>
+          <a href="#"><i class="fab fa-instagram">Instagram</i></a>
+        </div>
+      </div>
+    </footer>
+
+    <div class="footer-bottom">
+      <p>&copy; 2024 Vook Tech India. All rights reserved.</p>
+    </div>
+  </body>
+</html>
